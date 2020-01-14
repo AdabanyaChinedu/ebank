@@ -1,0 +1,55 @@
+<h1>Listing   Transactions</h1>
+
+    
+<table class="table" style="margin-top:-600px">
+  <thead>
+    <tr>
+      <th>Sender first name</th>
+      <th>Sender last name</th>
+      <th>Sender company_name</th>
+      <th>Sender Account Number</th>
+      <th>Sender Acount Type</th>
+      <th>Recipient first name</th>
+      <th>Recipient last name</th>
+      <th>Recipient company_name</th>
+      <th>Recipient Account Number</th>
+      <th>Recipient Acount Type</th>
+      <th>avail_balance</th>
+      <th>curr_balance</th>
+      <th>debit_credit</th>
+      <th>status</th>
+      <th>Description</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for transaction <- @transactions do %>
+    <tr>
+      <td><%= transaction.s_firstname %></td>
+      <td><%= transaction.s_lastname %></td>
+      <td><%= transaction.s_company_name %></td>
+      <td><%= transaction.s_acct_no %></td>
+      <td><%= transaction.s_acct_type %></td>
+       <td><%= transaction.r_firstname %></td>
+      <td><%= transaction.r_lastname %></td>
+      <td><%= transaction.r_company_name %></td>
+      <td><%= transaction.r_acct_no %></td>
+      <td><%= transaction.r_acct_type %></td>
+       <td><%= transaction.avail_balance %></td>
+      <td><%= transaction.curr_balance %></td>
+      <td><%= transaction.debit_credit%></td>
+      <td><%= transaction.status %></td>
+      <td><%= transaction.description %></td>
+
+
+      <td>
+        <span><%= link "Show", to: Routes.transactionn_path(@conn, :show, transaction) %></span>
+        <span><%= link "Edit", to: Routes.transactionn_path(@conn, :edit, transaction) %></span>
+        <span><%= link "Delete", to: Routes.transactionn_path(@conn, :delete, transaction), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Transaction", to: Routes.transactionn_path(@conn, :new) %></span>

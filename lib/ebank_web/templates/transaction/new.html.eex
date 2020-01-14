@@ -1,0 +1,32 @@
+<div class="columns column col-8" style="margin-left:30px; min-width:92%;margin-top:10px;">
+    <div class="column col-12" style="">
+     <h4>Transfer Between Users</h4>    
+    </div>
+
+    <div class="columns column col-8" style="background-color:white; height:70vh;margin-top:-100px;">
+            <div class="column col-4">
+
+              <div id="account-drpdown" class="form-group column col-8" style="margin-left:30px; margin-top:15px;height:83px;border: solid 1px #6964d9;">
+                <div style="margin-top:9px;margin-left:10px;font-size:1.2rem">Accounts</div>
+                <select class="form-select" style="border:none;padding-left:10px;font-size:1.2rem">                                
+                    <option>Savings-0703444572</option>
+                    <option>Current-0803444573</option>                                                               
+                </select>
+             </div>       
+                      
+            </div>   
+            <div class="column col-6 col-mx-auto">
+                <div style="margin-top:20px;font-size:1.5rem">Transfer To</div>
+                <form id="transfer" style="margin-top:20px;">             
+                    <input class="form-input" type="text" id="input-example-1" placeholder="Account Number">
+                    <input class="form-input" type="text" id="input-example-1" placeholder="Name of Beneficiary">
+                    <input class="form-input" type="text" id="input-example-1" placeholder="Amount to Transfer">
+                    <textarea class="form-input" id="input-example-3" placeholder="Description" rows="5"></textarea>
+                    <button class="btn btn-primary">Continue</button>
+                <form>
+            
+            </div>
+    </div>
+
+
+</div>

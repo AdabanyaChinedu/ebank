@@ -1,0 +1,92 @@
+<div class="columns column col-8" style="margin-left:30px; min-width:92%;margin-top:20px;">
+    <div class="column col-12" style="">
+    <span>Accounts <i class="icon icon-arrow-right"></i></span>
+    <span id="trans-navigator">Transaction details</span>
+    </div>
+
+    <div class="columns column col-12" style="background-color:white; height:70vh; padding: 20px 0 0 40px">
+            <div class="columns column col-12">
+                    <div class="column col-3">
+                    Transaction Details
+                    </div>  
+                    <div class="column col-1 col-ml-auto">
+                       <i class="icon icon-cross"></i>
+                    </div>   
+            </div>   
+            <div class="column col-12" style="margin-top:0;">
+             <table id="transaction-details" class="table">
+               <thead>
+                 <tr>
+                   <th>Transaction</th>
+                   <th></th>
+                   <th>Sender Account</th>
+                   <th></th>
+                   <th>Recipient Account</th>
+                   <th></th>
+                 </tr>
+                 
+               </thead>
+               <tbody>
+                <tr>
+                    <td class="trans-label">Available Balance:</td>
+                    <td class="trans-value">032019</td>
+                    <td class="trans-label">Account Number:</td>
+                    <td class="trans-value">032019</td>
+                    <td class="trans-label">Account Number:</td> 
+                    <td class="trans-value">032019</td> 
+                </tr>
+                <tr>
+                    <td class="trans-label">Date: </td>
+                     <td class="trans-value">26-03-2019 - 10:16 am</td>
+                    <td class="trans-label"> Account Type: </td>
+                     <td class="trans-value"> Savings</td>
+                    <td class="trans-label">Account Type:</td> 
+                    <td class="trans-value">Savings</td> 
+                </tr>
+                <tr>
+                    <td class="trans-label">Status:</td>
+                     <td class="trans-value"> Success </td>
+                    <td class="trans-label">First Name: </td>
+                    <td class="trans-value">John</td>
+                    <td class="trans-label">First Name:</td> 
+                    <td class="trans-value">John</td> 
+                </tr>
+               <tr>
+                    <td class="trans-label">Dedit/Credit: </td>
+                    <td class="trans-value">Credit </td>
+                    <td class="trans-label">Last Name:</td>
+                    <td class="trans-value">Doe</td>
+                    <td class="trans-label">Last Name: </td> 
+                    <td class="trans-value">Doe </td> 
+                </tr>
+                <tr>
+                    <td class="trans-label">Amount:</td>
+                    <td class="trans-value"><i>&#8358;</i>21,418.00</td>
+                    <td class="trans-label">Company Name:</td>
+                    <td class="trans-value">Lopworks </td>
+                    <td class="trans-label">Company Name:</td> 
+                    <td class="trans-value">Lopworks</td> 
+                </tr>
+                <tr>
+                    <td class="trans-label">Description:</td>
+                    <td class="trans-value">Transfer from "EBQ11223387654"</td>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                    <td></td> 
+                </tr>
+               </tbody>
+             
+             </table>
+            
+            </div>
+            <div class="column col-ml-auto col-4">
+                <button class="btn" style="width:120px;height:35px;font-size:1rem">Go Back</button>
+                <button class="btn trans-btn" style="width:120px;height:35px;font-size:1rem;margin-left:5rem">Print</button>
+            </div>
+
+
+    </div>
+
+
+</div>

@@ -1,0 +1,33 @@
+<h1>Show Customer</h1>
+
+<ul>
+
+  <li>
+    <strong>First name:</strong>
+    <%= @customer.first_name %>
+  </li>
+
+  <li>
+    <strong>Last name:</strong>
+    <%= @customer.last_name %>
+  </li>
+
+  <li>
+    <strong>Account type:</strong>
+    <%= @customer.account_type %>
+  </li>
+
+  <li>
+    <strong>C balance:</strong>
+    <%= @customer.c_balance %>
+  </li>
+
+  <li>
+    <strong>A balance:</strong>
+    <%= @customer.a_balance %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.customer_path(@conn, :edit, @customer) %></span>
+<span><%= link "Back", to: Routes.customer_path(@conn, :index) %></span>
