@@ -823,12 +823,12 @@ textarea[placeholder='Type Something ...'] {
 }
 
 .li-list[active] {
-  background-color:#f8f8ff;
+  background-color: #f8f8ff;
   border-right: 2px solid #6964d9
 }
 
 #index_table {
-  margin-top: -260px;
+  margin-top: -15rem;
   background-color: white;
   max-height: 90rem
 }
@@ -853,10 +853,10 @@ textarea[placeholder='Type Something ...'] {
   color: #333333;
 }
 
- #index_header div {
- 
+#index_header div {
+
   width: 150px;
-   height: 25px; 
+  height: 25px;
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
@@ -864,8 +864,8 @@ textarea[placeholder='Type Something ...'] {
   line-height: 1.71;
   letter-spacing: normal;
   color: #333333;
-  border: solid 1px #c6cbd4; 
-} 
+  border: solid 1px #c6cbd4;
+}
 
 #status {
   width: 150px;
@@ -882,23 +882,24 @@ textarea[placeholder='Type Something ...'] {
 #transaction-details td,
 #transaction-details th {
 
-border: none;
+  border: none;
 
 }
-#btn-header-layout{
- width:10rem;
- height: 2.5rem;
- border: solid 1px #c6cbd4;
- margin-top: -0.3rem;
- color:  #333333;
- padding-top: .5rem;
- font-size:1rem
+
+#btn-header-layout {
+  width: 10rem;
+  height: 2.5rem;
+  border: solid 1px #c6cbd4;
+  margin-top: -0.3rem;
+  color: #333333;
+  padding-top: .5rem;
+  font-size: 1rem
 }
 
-#btn-header-layout .icon-arrow-down{
+#btn-header-layout .icon-arrow-down {
   margin-left: .8rem;
   margin-bottom: .1rem;
-  font-size:.5rem;
+  font-size: .5rem;
 }
 
 
