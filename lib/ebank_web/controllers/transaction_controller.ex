@@ -3,11 +3,18 @@ defmodule EbankWeb.TransactionController do
 
   alias Ebank.Transactions
   alias Ebank.Transactions.Transaction
+  alias Ebank.CustomerStore
 
   def index(conn, _params) do
     transactions = Transactions.list_transactions()
     render(conn, "index.html", transactions: transactions)
   end
+
+ def index_api(conn, params) do                      
+       json(conn, CustomerStore.list_customers_from_api)
+  end
+  
+
 
   def new(conn, _params) do
     # changeset = Transactions.change_transaction(%Transaction{})

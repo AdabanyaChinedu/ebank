@@ -5,13 +5,18 @@ defmodule EbankWeb.TransactionnController do
   alias Ebank.Transactions.Transaction
 
   def index(conn, _params) do
-    transactions = Transactions.list_transactions()
-    render(conn, "index.html", transactions: transactions)
+
+      
+      transactions = Transactions.list_transactions()
+      render(conn, "index.html", transactions: transactions)
   end
 
   def index_api(conn, params) do
-      transactions = Transactions.list_transactions()
-      json(conn,  transactions) 
+       {:ok, response} = HTTPoison.get "http://192.168.1.126:4007/api/customers"    
+      %{"data"=> output} = Poison.decode!(response.body)     
+      json(conn, output)
+      # transactions = Transactions.list_transactions()
+      # json(conn,  transactions) 
   end
 
   def new(conn, _params) do
