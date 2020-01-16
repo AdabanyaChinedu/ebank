@@ -23,7 +23,7 @@ defmodule Ebank.Transactions.Transaction do
     field :s_lastname, :string
     field :status, :string
     field :customer_id, :id
-
+  
     timestamps()
   end
 

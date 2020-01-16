@@ -7,7 +7,7 @@ use Mix.Config
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
 config :ebank, EbankWeb.Endpoint,
-  http: [port: 4000],
+  http: [port: 4001],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
@@ -69,7 +69,9 @@ config :phoenix, :plug_init_mode, :runtime
 # Configure your database
 config :ebank, Ebank.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "chinedu",
   database: "ebank_dev",
   hostname: "localhost",
-  pool_size: 10
+  pool_size: 10,
+  timeout: 600_000,
+  pool_timeout: 600_000
