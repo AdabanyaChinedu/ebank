@@ -1,0 +1,117 @@
+{
+    "data": {
+        "id": "1",
+        "company_name": "lopworks",
+        "email": "chinedu@gmail.com",
+        "first_name": "John",
+        "last_name": "Doe",
+        "phone_number": "0701230012",
+        "accounts": [{
+                "id": "1",
+                "account_name": "Victor ogene",
+                "account_number": "123450",
+                "account_type": "savings",
+                "available_balance": "200000.00",
+                "current_balance": "200000.00",
+                "customer_id": "1",
+                "transactions": [{
+                        "id": "1",
+                        "amount": "2000",
+                        "available_balance": "180000",
+                        "current_balance": "180000",
+                        "debit_credit": "debit",
+                        "description": "I did a transfer",
+                        "recipient_account_number": "90000",
+                        "recipient_company_name": "dangote ltd",
+                        "recipient_firstname": "Ojukwu",
+                        "recipient_lastname": "Obinna",
+                        "recipient_name": "Ojukwu Obinna",
+                        "sender_account_number": "123450",
+                        "sender_company_name": "lopworks ltd",
+                        "sender_firstname": "victor",
+                        "sender_lastname": "ogene",
+                        "sender_name": "victor ogene",
+                        "status": "Success",
+                        "account_id": "1",
+                        "created": "2019-10-10"
+                    },
+                    {
+                        "id": "2",
+                        "amount": "3000",
+                        "available_balance": "120000",
+                        "current_balance": "120000",
+                        "debit_credit": "debit",
+                        "description": "Enjoy the money my brother",
+                        "recipient_account_number": "80000",
+                        "recipient_company_name": "interswitch ltd",
+                        "recipient_firstname": "Ojukwu",
+                        "recipient_lastname": "Obinna",
+                        "recipient_name": "Ojukwu Obinna",
+                        "sender_account_number": "123450",
+                        "sender_company_name": "lopworks ltd",
+                        "sender_firstname": "victor",
+                        "sender_lastname": "ogene",
+                        "sender_name": "victor ogene",
+                        "status": "Success",
+                        "account_id": "1",
+                        "created": "2019-10-10"
+                    }
+
+                ]
+            },
+            {
+                "id": "2",
+                "account_name": "Victor ogene",
+                "account_number": "123450",
+                "account_type": "current",
+                "available_balance": "200000.00",
+                "current_balance": "200000.00",
+                "customer_id": "1",
+                "transactions": [{
+                        "id": "3",
+                        "amount": "2000",
+                        "available_balance": "180000",
+                        "current_balance": "180000",
+                        "debit_credit": "debit",
+                        "description": "I did a transfer",
+                        "recipient_account_number": "90000",
+                        "recipient_company_name": "dangote ltd",
+                        "recipient_firstname": "Ojukwu",
+                        "recipient_lastname": "Obinna",
+                        "recipient_name": "Ojukwu Obinna",
+                        "sender_account_number": "123450",
+                        "sender_company_name": "lopworks ltd",
+                        "sender_firstname": "victor",
+                        "sender_lastname": "ogene",
+                        "sender_name": "victor ogene",
+                        "status": "Success",
+                        "account_id": "2",
+                        "created": "2019-10-10"
+                    },
+                    {
+                        "id": "4",
+                        "amount": "3000",
+                        "available_balance": "120000",
+                        "current_balance": "120000",
+                        "debit_credit": "debit",
+                        "description": "Enjoy the money my brother",
+                        "recipient_account_number": "80000",
+                        "recipient_company_name": "interswitch ltd",
+                        "recipient_firstname": "Ojukwu",
+                        "recipient_lastname": "Obinna",
+                        "recipient_name": "Ojukwu Obinna",
+                        "sender_account_number": "123450",
+                        "sender_company_name": "lopworks ltd",
+                        "sender_firstname": "victor",
+                        "sender_lastname": "ogene",
+                        "sender_name": "victor ogene",
+                        "status": "Success",
+                        "account_id": "2",
+                        "created": "2019-10-10"
+                    }
+
+                ]
+            }
+        ]
+    }
+}

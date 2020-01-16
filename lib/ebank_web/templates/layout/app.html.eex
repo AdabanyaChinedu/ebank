@@ -32,8 +32,8 @@
                 <%# sidebar %>
                     <div id="side_bar" class="column col-2" style="width:72px;background-color:#fff;min-height:calc(100vh - 70px);"> 
                         <ul class="ul-list">
-                        <li class="li-list" active><a><img src="/images/home.svg" alt=""/></a></li>
-                        <li class="li-list"><a><img src="/images/arrow.svg" alt=""/></a></li>
+                        <li id="home-icon" class="li-list" active><a><img src="/images/home.svg" alt=""/></a></li>
+                        <li id="transfer-arrow" class="li-list"><a><img src="/images/arrow.svg" alt=""/></a></li>
                        
                         </ul>
                             

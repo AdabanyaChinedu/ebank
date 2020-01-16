@@ -6,8 +6,9 @@ defmodule EbankWeb.TransactionController do
   alias Ebank.CustomerStore
 
   def index(conn, _params) do
-    transactions = Transactions.list_transactions()
-    render(conn, "index.html", transactions: transactions)
+    #transactions = Transactions.list_transactions()
+    #render(conn, "index.html", transactions: transactions)
+    render(conn, "index.html")
   end
 
  def index_api(conn, params) do                      

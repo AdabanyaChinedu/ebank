@@ -72,6 +72,6 @@ config :ebank, Ebank.Repo,
   password: "chinedu",
   database: "ebank_dev",
   hostname: "localhost",
-  pool_size: 10,
+  pool_size: 0,
   timeout: 600_000,
   pool_timeout: 600_000

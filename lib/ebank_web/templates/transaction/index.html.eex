@@ -6,20 +6,19 @@
                       <div class="columns column col-8 col-mr-auto" style="background-color:white;height:115px;margin-bottom:14px;">
                         <div id="account-drpdown" class="form-group column col-3" style="margin-left:20px; margin-top:15px;height:83px;border: solid 1px #6964d9;">
                               <div style="margin-top:9px;margin-left:10px;font-size:1.2rem">Accounts</div>
-                              <select class="form-select" style="border:none;padding-left:10px;font-size:1.2rem">                                
-                                <option>Savings-0703444572</option>
-                                <option>Current-0803444573</option>                                                               
+                              <select id="account-toggle" class="form-select" style="border:none;padding-left:10px;font-size:1.2rem">                                
+                                                                                              
                               </select>
                        </div>
                        <div id="balance-block" class="columns column col-8" style="margin-top:15px;margin-left:60px;height:83px;padding:10px">
                                 <div class="column col-3" style="margin-top:px;height:83px">
                                   <h6>Current Balance</h6>
-                                  <div><span>&#8358;</span><span>21,418.00</span></div>
+                                  <div><span>&#8358;</span><span id="c-balance"></span></div>
                                 </div>
 
                                 <div class="column col-3 col-mr-auto" style="margin-top:px;height:83px; margin-left:40px">
                                   <h6>Available Balance</h6>
-                                  <div><span>&#8358;</span><span>21,418.00</span></div>
+                                  <div><span>&#8358;</span><span id="a-balance"></span></div>
                                 </div>
                       </div>
 

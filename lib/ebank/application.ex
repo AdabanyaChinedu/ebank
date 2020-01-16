@@ -9,7 +9,7 @@ defmodule Ebank.Application do
     # List all child processes to be supervised
     children = [
       # Start the Ecto repository
-      Ebank.Repo,
+     # Ebank.Repo,
       # Start the endpoint when the application starts
       EbankWeb.Endpoint
       # Starts a worker by calling: Ebank.Worker.start_link(arg)

@@ -109,25 +109,24 @@ $(document).ready(function() {
                     apiresponse[i].created.substr(0, 10)
                 ]);
             }
-
-            $("#body")
-                .DataTable({
-                    responsive: true,
-                    data: resultArray,
-                    pagingType: "simple",
-                    dom: '<"top"fip>rt<"clear">',
-                    language: { search: "" },
-                    pageLength: 15,
-                    bDestroy: true,
-                    columnDefs: [{ className: "", targets: "_all" }]
-                }).columns.adjust()
-                .responsive.recalc();
-
+            return resultArray;
         });
 
     };
-    axiosCall("");
+    var dataResult = axiosCall("");
 
+    var table = $("#body")
+        .DataTable({
+            responsive: true,
+            data: dataResult,
+            pagingType: "simple",
+            dom: '<"top"fip>rt<"clear">',
+            language: { search: "" },
+            pageLength: 15,
+            columnDefs: [{ className: "", targets: "_all" }]
+        });
+    table.columns.adjust()
+        .responsive.recalc();
 
 
     $(".dataTables_filter input").attr(
@@ -158,14 +157,7 @@ $(document).ready(function() {
         "<i id='next-btn' class='icon icon-arrow-right'></i>"
     );
     $("#total").text(resultArray.length);
-    $(".dyn-btn2").click(function(e) {
+    $(".dyn-btn2").click(function() {
         window.location.href = "/tickets/new";
     });
-
-    $("#transfer-arrow").click(function(e) {
-        window.location.href = "/transactions/new";
-        $("#home-icon").removeAttr("active");
-        $("#transfer-arrow").attr("active");
-    });
-
 });
