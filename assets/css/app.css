@@ -3,9 +3,8 @@
 @import "./spectre-exp.min.css";
 @import "./spectre-icons.min.css";
 @import "./phoenix.css";
+
 /* @import "./node_modules/@fortawesome/fontawesome-free/css/all.css"; */
-
-
 /*Overrides for Tailwind CSS */
 .dataTables_wrapper {
     margin-top: 0%;
@@ -125,7 +124,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
     width: 300px;
     height: 32px;
     border: solid 1px #c6cbd4;
-    
+
 }
 
 #body_filter input[type='search'] {
@@ -134,8 +133,9 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
     margin: 0;
     border: none
 }
+
 #body_filter input[type='search']::placeholder {
-   font-size: 1.2rem
+    font-size: 1.2rem
 }
 
 #body>thead>tr>th {
@@ -161,6 +161,7 @@ table.dataTable tbody td:last-child {
     padding-left: 2%;
 
 }
+
 .dyn {
     width: 15rem;
     height: 32px;
@@ -270,107 +271,104 @@ table.dataTable tbody tr td a {
     border-radius: 0;
 }
 
-#balance-block div div span{
-font-size: 24px;
-font-weight: bold;
-font-stretch: normal;
-font-style: normal;
-line-height: normal;
-letter-spacing: normal;
-color: #6964d9;
+#balance-block div div span {
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #6964d9;
 }
 
-#balance-block div h6{
-font-size: 14px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: 1.71;
-letter-spacing: normal;
-color: #828283;
-margin-bottom: 3px
+#balance-block div h6 {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #828283;
+    margin-bottom: 3px
 }
 
-.form-select:focus{
+.form-select:focus {
     box-shadow: none;
 }
 
-#account-drpdown select  {
-height:30px;
-font-size: 16px;
-font-weight: bold;
-font-stretch: normal;
-font-style: normal;
-line-height: 1.5;
-letter-spacing: normal;
-color: #6964d9;
-width: 97%;
+#account-drpdown select {
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #6964d9;
+    width: 97%;
 }
 
 #transfer input,
-#transfer textarea
-{
-background-color: #f9f9f9;
-border-radius: 0;
-margin-bottom: 20px;
-font-size: 1.2rem ;
+#transfer textarea {
+    background-color: #f9f9f9;
+    border-radius: 0;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 #transfer input::placholder,
-#transfer textarea::placeholder{
+#transfer textarea::placeholder {}
 
+
+#transfer textarea {
+    min-height: 15.5rem;
 }
 
-
-#transfer textarea { 
-min-height: 15.5rem;
-}
-
-#transfer button{
-    width:10rem;
+#transfer button {
+    width: 10rem;
     height: 3.5rem;
-    margin-top:30px;
-    font-size:1rem;
-    float:right
-}
-.trans-btn{
-background-color: #6964d9;
-color:#fff
+    margin-top: 30px;
+    font-size: 1rem;
+    float: right
 }
 
-#transaction-details thead{
-color: #6964d9;
-font-size: 15px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: 1.71;
-letter-spacing: normal;
+.trans-btn {
+    background-color: #6964d9;
+    color: #fff
+}
+
+#transaction-details thead {
+    color: #6964d9;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
 
 }
 
 .trans-label,
 #trans-navigator {
-font-size: 14px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: 1.71;
-letter-spacing: normal;
-color: #828283;
-width: 5%
-
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #828283;
+    width: 5%
 }
 
-.trans-value{
-font-size: 14px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: 1.71;
-letter-spacing: normal;
-color: #000000;
-width: 10%
+.trans-value {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #000000;
+    width: 10%
 }
 
 #prev-btn,

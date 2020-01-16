@@ -18,7 +18,7 @@
 
             <%# header %>
             <div id="index1_header" class="columns column col-12" style="height: 70px ;background-color:#fff; width: 100vw">
-                  <h4 class="h2 column col-2" style="font-size:14px;margin-left:100px"> Welcome back, <b>Silas</b> </h4>             
+                  <h4 class="h2 column col-2" style="font-size:14px;margin-left:100px"> Welcome back, <b id="first-name">Silas</b> </h4>             
                   <div class="column col-ml-auto col-7">
                   <div class="columns" style="padding: 25px 15px 0 0">
                     <img class="column col-ml-auto col-3"  src="/images/bell.svg" style="height:15px;width:15px;margin-right: 4rem"/>
@@ -27,16 +27,15 @@
                   </div>
               </div> 
 
-          <%# body     %>
+          <%# body %>
+
           <div id="index_body" class="columns column col-12">
                 <%# sidebar %>
                     <div id="side_bar" class="column col-2" style="width:72px;background-color:#fff;min-height:calc(100vh - 70px);"> 
                         <ul class="ul-list">
-                        <li id="home-icon" class="li-list" active><a><img src="/images/home.svg" alt=""/></a></li>
-                        <li id="transfer-arrow" class="li-list"><a><img src="/images/arrow.svg" alt=""/></a></li>
-                       
-                        </ul>
-                            
+                        <li id="home-icon" class="li-list" ><a><img src="/images/home.svg" alt=""/></a></li>
+                        <li id="transfer-arrow" class="li-list"><a><img src="/images/arrow.svg" alt=""/></a></li>                       
+                        </ul>                            
                     </div>
       <%= render @view_module, @view_template, assigns %>
       </div>

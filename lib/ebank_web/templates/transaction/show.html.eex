@@ -81,8 +81,8 @@
             
             </div>
             <div class="column col-ml-auto col-4">
-                <button class="btn" style="width:120px;height:35px;font-size:1rem">Go Back</button>
-                <button class="btn trans-btn" style="width:120px;height:35px;font-size:1rem;margin-left:5rem">Print</button>
+                <button id="go-back" class="btn" style="width:120px;height:35px;font-size:1rem">Go Back</button>
+                <button id="print" class="btn trans-btn" style="width:120px;height:35px;font-size:1rem;margin-left:5rem">Print</button>
             </div>
 
 

@@ -822,9 +822,10 @@ textarea[placeholder='Type Something ...'] {
   margin-left: 2.5rem;
 }
 
-.li-list[active] {
+.li-list[class$="active"] {
   background-color: #f8f8ff;
-  border-right: 2px solid #6964d9
+  border-right: 2px solid #6964d9;
+  color: #6964d9;
 }
 
 #index_table {

@@ -1,9 +1,13 @@
 defmodule EbankWeb.TransactionController do
   use EbankWeb, :controller
 
+  
+  alias Ebank.CustomerStore
   alias Ebank.Transactions
   alias Ebank.Transactions.Transaction
-  alias Ebank.CustomerStore
+  alias Ebank.Accounts.Account
+  alias Ebank.Accounts.Customer
+
 
   def index(conn, _params) do
     #transactions = Transactions.list_transactions()
