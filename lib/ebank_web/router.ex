@@ -28,5 +28,6 @@ defmodule EbankWeb.Router do
     pipe_through :api
 
   get "/transactions", TransactionController, :index_api
+
   end
 end

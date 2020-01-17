@@ -3,7 +3,7 @@
     <span>Accounts <i class="icon icon-arrow-right"></i></span>
     <span id="trans-navigator">Transaction details</span>
     </div>
-
+      
     <div class="columns column col-12" style="background-color:white; height:70vh; padding: 20px 0 0 40px">
             <div class="columns column col-12">
                     <div class="column col-3">
@@ -29,15 +29,15 @@
                <tbody>
                 <tr>
                     <td class="trans-label">Available Balance:</td>
-                    <td class="trans-value">032019</td>
+                    <td class="trans-value"><span>&#8358;</span><%= @transaction.available_balance %> </td>
                     <td class="trans-label">Account Number:</td>
-                    <td class="trans-value">032019</td>
+                    <td class="trans-value"><%= @transaction.sender_account_number %> </td>
                     <td class="trans-label">Account Number:</td> 
-                    <td class="trans-value">032019</td> 
+                    <td class="trans-value"><%= @transaction.recipient_account_number %></td> 
                 </tr>
                 <tr>
                     <td class="trans-label">Date: </td>
-                     <td class="trans-value">26-03-2019 - 10:16 am</td>
+                     <td class="trans-value"><%= @transaction.created%></td>
                     <td class="trans-label"> Account Type: </td>
                      <td class="trans-value"> Savings</td>
                     <td class="trans-label">Account Type:</td> 
@@ -45,31 +45,31 @@
                 </tr>
                 <tr>
                     <td class="trans-label">Status:</td>
-                     <td class="trans-value"> Success </td>
+                     <td class="trans-value">  <%= @transaction.status %> </td>
                     <td class="trans-label">First Name: </td>
-                    <td class="trans-value">John</td>
+                    <td class="trans-value"><%= @transaction.sender_firstname %></td>
                     <td class="trans-label">First Name:</td> 
-                    <td class="trans-value">John</td> 
+                    <td class="trans-value"><%= @transaction.recipient_firstname %></td> 
                 </tr>
                <tr>
                     <td class="trans-label">Dedit/Credit: </td>
-                    <td class="trans-value">Credit </td>
+                    <td class="trans-value"><%= @transaction.debit_credit %></td>
                     <td class="trans-label">Last Name:</td>
-                    <td class="trans-value">Doe</td>
+                    <td class="trans-value"><%= @transaction.sender_lastname %></td>
                     <td class="trans-label">Last Name: </td> 
-                    <td class="trans-value">Doe </td> 
+                    <td class="trans-value"><%= @transaction.recipient_lastname %></td> 
                 </tr>
                 <tr>
                     <td class="trans-label">Amount:</td>
-                    <td class="trans-value"><i>&#8358;</i>21,418.00</td>
+                    <td class="trans-value"><span>&#8358;</span><%= @transaction.amount %></td>
                     <td class="trans-label">Company Name:</td>
-                    <td class="trans-value">Lopworks </td>
+                    <td class="trans-value"><%= @transaction.sender_company_name %> </td>
                     <td class="trans-label">Company Name:</td> 
-                    <td class="trans-value">Lopworks</td> 
+                    <td class="trans-value"><%= @transaction.recipient_company_name %></td> 
                 </tr>
                 <tr>
                     <td class="trans-label">Description:</td>
-                    <td class="trans-value">Transfer from "EBQ11223387654"</td>
+                    <td class="trans-value"><%= @transaction.description %></td>
                     <td></td>
                     <td></td> 
                     <td></td>

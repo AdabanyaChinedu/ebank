@@ -40,9 +40,10 @@ defmodule EbankWeb.TransactionController do
   end
 
   def show(conn, %{"id" => id}) do
-    # transaction = Transactions.get_transaction!(id)
-    # render(conn, "show.html", transaction: transaction)
-    render(conn, "show.html")
+     IO.puts "***********Just CHECKING CHEKING *************"
+     transaction = CustomerStore.get_transaction_from_api(id)
+     render(conn, "show.html", transaction: transaction)
+     #render(conn, "show.html")
   end
 
   def edit(conn, %{"id" => id}) do

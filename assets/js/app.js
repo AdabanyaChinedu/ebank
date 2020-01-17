@@ -10,7 +10,6 @@ import css from "../css/app.css";
 // Import dependencies
 //
 import "phoenix_html";
-
 // Import local files
 //
 // Local files can be imported directly using relative paths, for example:
@@ -42,7 +41,7 @@ $(document).ready(function() {
   const axios = require("axios");
 
   function axiosCall(accountType) {
-    return axios({
+     axios({
       method: "get",
       url: "/api/transactions",
       responseType: "json"
@@ -76,7 +75,7 @@ $(document).ready(function() {
           stransactions = savingsAccount[0].transactions;
 
           $("#account-toggle").append(
-            "<option id='s-option'>Savings - " +
+            "<option id='s-option' data-accountId=''>Savings - " +
               savingsAccount[0].account_number +
               "</option>"
           );
@@ -85,7 +84,7 @@ $(document).ready(function() {
           ctransactions = currentAccount[0].transactions;
 
           $("#account-toggle").append(
-            "<option id='c-option'>Current - " +
+            "<option id='c-option' data-accountId=''>Current - " +
               currentAccount[0].account_number +
               "</option>"
           );
@@ -162,6 +161,7 @@ $(document).ready(function() {
       // $("#total").text(resultArray.length);
     });
   }
+
   axiosCall("");
 
   // $(".dyn-btn2").click(function(e) {
