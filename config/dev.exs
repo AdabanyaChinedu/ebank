@@ -69,7 +69,7 @@ config :phoenix, :plug_init_mode, :runtime
 # Configure your database
 config :ebank, Ebank.Repo,
   username: "postgres",
-  password: "chinedu",
+  password: "postgres",
   database: "ebank_dev",
   hostname: "localhost",
   pool_size: 0,

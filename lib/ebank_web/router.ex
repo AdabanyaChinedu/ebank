@@ -16,11 +16,8 @@ defmodule EbankWeb.Router do
   scope "/", EbankWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
-    resources "/customers", CustomerController
-    resources "/users", UserController
+    get "/", TransactionController, :index
     resources "/transactions", TransactionController
-    resources "/transactionns", TransactionnController
   end
 
   #Other scopes may use custom stacks.
